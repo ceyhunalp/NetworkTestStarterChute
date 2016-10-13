@@ -11,7 +11,7 @@ while true; do
     #
     # NOT IMPLEMENTED
     #
-
+    ping -c 2 www.google.com
     sleep 60
 done
 

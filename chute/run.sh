@@ -11,7 +11,7 @@ while true; do
     #
     # NOT IMPLEMENTED
     #
-    ping -c 2 www.google.com
+    ping -c 2 www.google.com >> /usr/share/nginx/html/results.txt
     sleep 60
 done
 

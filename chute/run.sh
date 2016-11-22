@@ -7,6 +7,15 @@
 # You can implement logic here to do periodic network tests and save the
 # results.  You can do that directly from this bash script or call another
 # program that you write (e.g. in Python).
+
+echo "==========================STARTING============================" >> /usr/share/nginx/html/results.txt
+cat /etc/resolv.conf >> /usr/share/nginx/html/results.txt
+
+rm /etc/resolv.conf
+echo "nameserver 127.0.0.1" >> /usr/share/nginx/html/results.txt
+echo "==========================NEW DNS============================" >> /usr/share/nginx/html/results.txt
+cat /etc/resolv.conf >> /usr/share/nginx/html/results.txt
+
 while true; do
     #
     # NOT IMPLEMENTED

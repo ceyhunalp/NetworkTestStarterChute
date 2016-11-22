@@ -14,6 +14,8 @@ while true; do
     ping -c 2 www.google.com >> /usr/share/nginx/html/results.txt
     iperf -c iperf.wiscnet.net -u -b20M -p 5002 -i2 -t30 >> /usr/share/nginx/html/results.txt
     sleep 60
+    echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >> /usr/share/nginx/html/results.txt
+    cat /etc/resolv.conf >> /usr/share/nginx/html/results.txt
 done
 
 # If execution reaches this point, the chute will stop running.

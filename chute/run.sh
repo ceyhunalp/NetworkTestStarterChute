@@ -11,8 +11,8 @@
 echo "==========================STARTING============================" >> /usr/share/nginx/html/results.txt
 cat /etc/resolv.conf >> /usr/share/nginx/html/results.txt
 
-rm /etc/resolv.conf
-echo "nameserver 127.0.0.1" >> /usr/share/nginx/html/results.txt
+cp /dev/null /etc/resolv.conf
+echo "nameserver 127.0.0.1" >> /etc/resolv.conf
 echo "==========================NEW DNS============================" >> /usr/share/nginx/html/results.txt
 cat /etc/resolv.conf >> /usr/share/nginx/html/results.txt
 
